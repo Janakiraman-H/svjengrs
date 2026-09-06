@@ -12,7 +12,7 @@ This repository is a full-stack Next.js app configured for **Workers**, accessed
 
    | Setting | Value |
    | --- | --- |
-   | Worker/project name | `svj-consultants` (must match `wrangler.jsonc`) |
+   | Worker/project name | `svjengrs` (must match `wrangler.jsonc`) |
    | Production branch | `main` |
    | Root directory | Repository root (leave default) |
    | Build command | `npm run build:cloudflare` |
@@ -30,7 +30,7 @@ Cloudflare references: [Workers Builds settings](https://developers.cloudflare.c
 
 ## Prepared in this project
 
-- Cloudflare Worker: `svj-consultants`, built with OpenNext while retaining Next.js.
+- Cloudflare Worker: `svjengrs`, built with OpenNext while retaining Next.js. Both `name` and the `WORKER_SELF_REFERENCE` service in `wrangler.jsonc` must match this dashboard Worker name.
 - Custom domains: `svjengrs.com` and `www.svjengrs.com`; `www` redirects permanently to the main HTTPS domain, preserving paths and query strings.
 - Canonical metadata, structured data, robots and all 45 sitemap entries use `https://svjengrs.com`.
 - Public pages are prerendered; the consultation API and protected admin run server-side. Static-asset caching does not require an R2 bucket. There is no ISR; content updates need a deployment.
@@ -59,7 +59,7 @@ Before changing routing, inspect existing records for the two web hostnames. Pre
 
 Use a Supabase project and apply `supabase/migrations/001_initial.sql` with its SQL editor. The service-role key must stay server-side. RLS is enabled and browser clients have no direct table access.
 
-Set these runtime secrets on the `svj-consultants` Worker. The CLI prompts securely for each value (and may create the Worker on the first setup):
+Set these runtime secrets on the `svjengrs` Worker. The CLI prompts securely for each value (and may create the Worker on the first setup):
 
 ```bash
 npx wrangler secret put SUPABASE_URL
