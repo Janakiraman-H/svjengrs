@@ -1,0 +1,33 @@
+{
+  "name": "svj-engineers-consultants",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "preview:cloudflare": "npm run build:cloudflare && opennextjs-cloudflare preview",
+    "deploy:cloudflare": "npm run build:cloudflare && opennextjs-cloudflare deploy -- --keep-vars",
+    "check:cloudflare": "wrangler whoami"
+  },
+  "dependencies": {
+    "@opennextjs/cloudflare": "1.20.6",
+    "lucide-react": "^0.468.0",
+    "next": "16.3.4",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "playwright": "^1.62.1",
+    "typescript": "latest",
+    "wrangler": "4.129.0"
+  }
+}

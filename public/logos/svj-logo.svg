@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 180" role="img" aria-labelledby="title desc">
+  <title id="title">SVJ</title><desc id="desc">SVJ Engineers and Consultants logo with red monogram and blue orbital rings.</desc>
+  <g fill="#f04b2e" font-family="Arial Black, Arial, sans-serif" font-size="128" font-weight="900" letter-spacing="-14"><text x="12" y="130">SVJ</text></g>
+  <path d="M22 145H286" fill="none" stroke="#f04b2e" stroke-width="11" stroke-linecap="square"/>
+  <path d="M221 58C248 27 302 17 331 35C344 43 346 54 339 64C326 82 290 94 255 93C232 92 216 82 215 71C214 66 217 62 221 58Z" fill="none" stroke="#07599f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M222 61C251 40 306 34 337 48C348 53 349 62 342 70C329 86 290 98 253 96C229 94 215 85 216 75" fill="none" stroke="#16b9df" stroke-width="10" stroke-linecap="round"/>
+  <path d="M216 104C235 76 287 56 327 62C344 65 350 74 345 85C336 105 294 125 256 126C230 127 214 119 213 111C212 109 214 106 216 104Z" fill="none" stroke="#07599f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M215 104C237 86 286 73 326 78C341 80 347 87 340 97C328 115 289 131 253 129C229 128 213 119 213 111" fill="none" stroke="#16b9df" stroke-width="9" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,4 @@
+'use client';
+import Script from 'next/script';import {useEffect} from 'react';
+declare global{interface Window{dataLayer?:unknown[]}}
+export default function Analytics(){const id=process.env.NEXT_PUBLIC_GA_ID;useEffect(()=>{const custom=(event:Event)=>window.dataLayer?.push((event as CustomEvent).detail);const click=(event:MouseEvent)=>{const target=(event.target as HTMLElement).closest<HTMLElement>('[data-analytics]');if(target)window.dataLayer?.push({event:target.dataset.analytics})};addEventListener('svj-analytics',custom);addEventListener('click',click);return()=>{removeEventListener('svj-analytics',custom);removeEventListener('click',click)}},[]);if(!id)return null;return <><Script src={`https://www.googletagmanager.com/gtag/js?id=${id}`} strategy="afterInteractive"/><Script id="ga4">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','${id}',{anonymize_ip:true});`}</Script></>}

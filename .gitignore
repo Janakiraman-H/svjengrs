@@ -1,0 +1,20 @@
+node_modules/
+.next/
+.open-next/
+.wrangler/
+out/
+*.tsbuildinfo
+
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+.env.local
+.env.*.local
+!.env.example
+
+data/inquiries.ndjson
+# Local source-document transcriptions; the typed public content lives in src/data.
+/extracted-content.md
+/projects.json
+.DS_Store

@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <main><section className="page-hero not-found"><div className="eyebrow mono">404 / Alignment not found</div><h1>Wrong<br/><span style={{color:'var(--blue)'}}>turn.</span></h1><p className="hero-sub">The requested page is outside this alignment.</p><div className="hero-actions"><Link className="button" href="/">Return home</Link><Link className="text-link" href="/projects">Browse projects</Link></div></section></main>}

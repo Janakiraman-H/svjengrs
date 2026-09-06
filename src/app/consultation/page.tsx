@@ -1,0 +1,4 @@
+import type {Metadata} from 'next';
+import ConsultationForm from '../../components/consultation/ConsultationForm';
+export const metadata:Metadata={title:'Book an Infrastructure Consultation | SVJ',description:'Discuss highway, pavement, structural, automotive test-track, airport, port or project-management requirements with SVJ Engineers and Consultants.',alternates:{canonical:'/consultation'}};
+export default function Consultation(){return <main><section className="page-hero"><div className="eyebrow mono">Start a conversation</div><h1>Bring us<br/><span style={{color:'var(--blue)'}}>the hard part.</span></h1><p className="hero-sub">Share the outline. We’ll use your information only to review and respond to this enquiry.</p></section><section className="section dark"><div className="form-shell"><ConsultationForm/></div></section></main>}
