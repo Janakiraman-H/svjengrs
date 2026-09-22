@@ -26,6 +26,8 @@ Set a strong `ADMIN_PASSWORD` and random `ADMIN_SESSION_SECRET`, then visit `/ad
 
 ## Analytics
 
+Microsoft Clarity project `ymektsmzgh` is loaded asynchronously from the shared `<head>` in `src/app/layout.tsx` on every page. It does not require an environment variable or GA4 configuration.
+
 Set `NEXT_PUBLIC_GA_ID` to enable GA4. The consultation flow emits a `consultation_completed` event only after a successful API response; phone and email links emit matching interaction events. Apply the organization's preferred consent policy before enabling analytics in production.
 
 ## Content and imagery
