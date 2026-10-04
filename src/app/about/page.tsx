@@ -46,8 +46,7 @@ export default function About(){
         </article>)}
       </div>
       <div id="founder" className="practice-background">
-        <span className="mono">Our beginnings</span>
-        <p>Founded in {company.founded} by M. Ubendiran, SVJ is based in Chennai and works across a range of infrastructure sectors.</p>
+        <p>M. Ubendiran, ME</p>
       </div>
       <Link className="text-link" href="/projects">Explore our assignments ↗</Link>
     </section>
